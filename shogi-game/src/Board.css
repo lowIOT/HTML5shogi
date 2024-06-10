@@ -1,0 +1,28 @@
+.board {
+	display: grid;
+	grid-template-columns: repeat(9, 1fr);
+	grid-template-rows: repeat(9, 1fr);
+	gap: 1px;
+	width: 100%;
+	max-width: 450px;
+	height: auto;
+	aspect-ratio: 1;
+  }
+  
+  .cell {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid black;
+	position: relative;
+  }
+  
+  .cell.selected {
+	background-color: lightblue;
+  }
+  
+  .piece {
+	font-size: 24px;
+	transition: transform 0.5s;
+  }
+  
